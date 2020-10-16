@@ -25,9 +25,7 @@ function ModalImage(props) {
       <div className="bigImgContentDiv">
         <img alt="test" className="bigImgDiv" src={imgSrc} alt={props.alt ? props.alt : "model image"} ></img>
         <div className="bigImgBackDiv" onClick={() => setShow(false)}></div>
-        <div className="bigImgButtonDiv" onClick={() => setShow(false)}>
-          Close
-        </div>
+        <div className="bigImgButtonDiv" onClick={() => setShow(false)}></div>
       </div>
     </div>
   );

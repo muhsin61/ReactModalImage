@@ -1,51 +1,78 @@
-.bigImgMainDiv{
-    top: 0;
-    position: fixed;  
-    z-index: 100;
-    width: 100%;
-    height: 100vh;
+.bigImgMainDiv {
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
 }
-.bigImgContentDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
+.bigImgContentDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
-.bigImgDiv{ 
-    width: auto;
-    height: 80vh;
-    z-index: 105;
-    opacity: 1;
-    animation-name: zoom;
-    animation-duration: 0.6s;
+.bigImgDiv {
+  width: auto;
+  height: 80vh;
+  z-index: 105;
+  opacity: 1;
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
-@media(max-width: 500px){
-    .bigImgDiv{ 
-        width: 90%;
-        height: auto;
-    }
+@media (max-width: 500px) {
+  .bigImgDiv {
+    width: 90%;
+    height: auto;
+  }
 }
-.bigImgBackDiv{
-    z-index: 102;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    opacity: 0.5;
-    top: 0;
+.bigImgBackDiv {
+  z-index: 102;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.5;
+  top: 0;
 }
-.bigImgButtonDiv{
-    z-index: 105;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: green;
-    width: 100px;
-    cursor: pointer;
-    border-radius: 10px;
+.bigImgButtonDiv {
+  z-index: 106;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 30px;
+  right: 30px;
+  width: 10px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.bigImgButtonDiv:hover::before {
+  transform: rotate(-45deg);
+}
+.bigImgButtonDiv:hover::after {
+  transform: rotate(45deg);
+}
+.bigImgButtonDiv::before,
+.bigImgButtonDiv::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 5px;
+  background-color: black;
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+.bigImgButtonDiv::after {
+  transform: rotate(-45deg);
 }
