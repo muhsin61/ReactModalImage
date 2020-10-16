@@ -1,3 +1,36 @@
+Demo: https://react-modal-image.vercel.app/
+## Installation
+
+Use the package manager [npm](https://www.npmjs.com/) to install react-basic-modal-image.
+
+```bash
+npm i react-basic-modal-image
+```
+## Usage
+
+```node
+  import ModalImage from "react-basic-modal-image"
+
+  <ModalImage /> //default 
+  <ModalImage except={["App-logo","test4 test"]} alt="test1" />
+
+```
+##
+```
+<Skeleton /> //default
+```
+![til](https://media.giphy.com/media/q5Zx8M6AmvdccvofUf/giphy.gif)
+
+ 
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+##
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
