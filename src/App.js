@@ -9,10 +9,10 @@ import Test from "./Test"
 function App() {
   return (
     <div className="App">
-      <ModalImage except={["App-logo1","test4 test"]} />
+      <ModalImage except={["App-logo","test4 test"]} alt="test1" />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <img src={photo} className="App-logo" alt="logos" />
+        <img src={photo} className="logo" alt="logos" />
         <p>Test</p>
       </header>
       <Test/>
