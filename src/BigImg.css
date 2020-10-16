@@ -15,7 +15,6 @@
 .bigImgDiv{ 
     width: auto;
     height: 80vh;
-    border: green 2px solid;
     z-index: 105;
     opacity: 1;
     animation-name: zoom;
@@ -24,7 +23,13 @@
 @keyframes zoom {
     from {transform:scale(0)}
     to {transform:scale(1)}
-  }
+}
+@media(max-width: 500px){
+    .bigImgDiv{ 
+        width: 90%;
+        height: auto;
+    }
+}
 .bigImgBackDiv{
     z-index: 102;
     position: fixed;

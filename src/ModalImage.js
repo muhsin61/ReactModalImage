@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./BigImg.css";
 
-function Testimg(props) {
+function ModalImage(props) {
   const [imgSrc, setImgSrc] = useState("");
   const [isShow, setShow] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("click", function (e) {
+    window.addEventListener("click", (e) => {
       const getClassName = () =>
         props.except.find((my) => {
           return my === e.target.className;
@@ -32,4 +32,4 @@ function Testimg(props) {
     </div>
   );
 }
-export default Testimg;
+export default ModalImage;
